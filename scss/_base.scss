@@ -36,3 +36,22 @@ body {
 .enable {
 	display: block;
 }
+
+.container {
+	max-width: 1460px;
+	margin: 0 auto;
+	width: 100%;
+	padding:10px;
+	overflow: hidden;
+}
+
+.link {
+	text-decoration: none;
+	font-size: 120%;
+	color:inherit;
+	transition: opacity .9s ease;
+
+}
+[hidden] {
+	display: none;
+}

@@ -16,7 +16,7 @@
                 <div class="menu-desktop grid">
                     <a href="#" class="menu-desktop-text">Home</a>
                     <a href="#" class="menu-desktop-text">Gallery</a>
-                    <a href="#" class="menu-desktop-text">About Us</a>
+                    <a href="#about" class="menu-desktop-text">About Us</a>
                     <a href="#" class="menu-desktop-text">Feedback</a>
                     <a href="#" class="menu-desktop-text">Contacts</a>
                 </div>
@@ -68,52 +68,116 @@
     </section>
     <section>
         <div class="container">
+            <h2>Our works</h2>
             <div class="gallery grid">
+
                 <div class="gallery-content">
                     <div class="content-text">
                         <h3>Lorem</h3>
                         <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptas....</p>
+                        <a href="#" class="seemore button">See More</a>
                     </div>
-                    <img src="" alt="" class="img-responsive">
+                    <img src="img/work.jpg" alt="works" class="img-responsive">
                 </div>
                 <div class="gallery-content">
                     <div class="content-text">
                         <h3>Lorem</h3>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, odio!...</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptas....</p>
+                        <a href="#" class="seemore button">See More</a>
                     </div>
-                    <img src="" alt="" class="img-responsive">
+                    <img src="img/work.jpg" alt="works" class="img-responsive">
                 </div>
                 <div class="gallery-content">
                     <div class="content-text">
                         <h3>Lorem</h3>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, illo!...</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptas....</p>
+                        <a href="#" class="seemore button">See More</a>
                     </div>
-                    <img src="" alt="" class="img-responsive">
+                    <img src="img/work.jpg" alt="works" class="img-responsive">
                 </div>
                 <div class="gallery-content">
                     <div class="content-text">
                         <h3>Lorem</h3>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, ex....</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptas....</p>
+                        <a href="#" class="seemore button">See More</a>
                     </div>
-                    <img src="" alt="" class="img-responsive">
+                    <img src="img/work.jpg" alt="works" class="img-responsive">
                 </div>
                 <div class="gallery-content">
                     <div class="content-text">
                         <h3>Lorem</h3>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, saepe....</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptas....</p>
+                        <a href="#" class="seemore button">See More</a>
                     </div>
-                    <img src="" alt="" class="img-responsive">
+                    <img src="img/work.jpg" alt="works" class="img-responsive">
                 </div>
                 <div class="gallery-content">
                     <div class="content-text">
                         <h3>Lorem</h3>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, iste....</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptas....</p>
+                        <a href="#" class="seemore button">See More</a>
                     </div>
-                    <img src="" alt="" class="img-responsive">
+                    <img src="img/work.jpg" alt="works" class="img-responsive">
+                </div>
+
+            </div>
+            <a href="#" class="works button">All works</a>
+        </div>
+    </section>
+    <section id="about" style="background-image: url(../img/)">
+        <div class="about">
+            <h2>Our Company</h2>
+            <div class="about-tabs grid">
+                <ul class="tabs">
+                    <li><button onclick="tabs('tab-one')" class="tabs-index button">About Us</button></li>
+                    <li><button onclick="tabs('tab-two')" class="tabs-index button">Skills</button></li>
+                    <li><button onclick="tabs('tab-three')" class="tabs-index button">Contacts</button></li>
+                </ul>
+                <div class="container">
+                    <div id="tab-one" class="tabs-panel grid" data-tab="0">
+                        <h3>About Us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam blanditiis doloremque ducimus enim harum illum laboriosam modi ratione tempora ullam!</p>
+
+                    </div>
+                    <div id="tab-two" class="tabs-panel" data-tab="1" hidden>
+                        <h3>Profesional skills</h3>
+                        <p>We working </p>
+
+                    </div>
+                    <div id="tab-three" class="tabs-panel" data-tab="1" hidden>
+                        <h3>Contacts</h3>
+                        <p>Our office is situated in the capital of Ukraine</p>
+
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="footer-content grid">
+            <div class="footer-content-item">
+                <p><a href="#" class="link">Artem</a></p>
+                <p><a href="#" class="link">Artem</a></p>
+                <p><a href="#" class="link">Artem</a></p>
+                <p><a href="#" class="link">Artem</a></p>
+            </div>
+            <div class="footer-content-item">
+                <p><a href="#" class="link">Link 1</a></p>
+                <p><a href="#" class="link">Link 2</a></p>
+                <p><a href="#" class="link">Link 3</a></p>
+                <p><a href="#" class="link">Link 4</a></p>
 
+            </div>
+            <div class="footer-content-item">
+                <form action="" class="form grid">
+                    <input type="text" name="name" placeholder="Name:">
+                    <input type="text" name="email" placeholder="Email:">
+                    <textarea name="textarea" cols="30" rows="7" placeholder="Message here"></textarea>
+                    <button id="footer-send" class="button">Send</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="js/tabs.js"></script>
 </body>
 </html>
