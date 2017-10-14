@@ -1,0 +1,246 @@
+@import "vars";
+@import "fonts";
+@import "base";
+@import "fluidfont";
+//start code here //
+
+.grid {
+  display: grid;
+}
+
+.menu {
+  width: 100%;
+  background: #fff;
+  height: 10vh;
+  top: 0;
+  z-index: 2;
+  font-size: 21px;
+  font-weight:300;
+}
+.menu-desktop {
+  grid-template-columns: repeat(5,1fr);
+  align-content: center;
+  justify-content: center;
+  &-text {
+    width: 90%;
+    text-align: center;
+    text-decoration: none;
+    color:darken($light, 30%);
+    border: {
+      right: 1px solid;
+    }
+    border-color: $light;
+    padding: 5px 0;
+    &:hover {
+      transition: 1.2s ease;
+      color:darken($light, 100%);
+      border-color  : darken($light, 100%);
+    }
+    &:active {
+      -webkit-box-shadow:inset -4px -11px 7px -11px rgba(50,50,50,0.75);
+      transition: .2s ease;
+      border:none;
+      padding: {
+       top:10px;
+        bottom: 0;
+      };
+    }
+  }
+}
+
+.main-header {
+  -webkit-background-size:cover;
+  background-size:cover;
+  background-position: center;
+  min-height: 90vh;
+  position: relative;
+  align-content: center;
+  width: 100%;
+
+}
+.header-content {
+  grid-template-columns: repeat(2, .9fr);
+  grid-gap:10px;
+  &-left {
+    margin:{
+      left:30px;
+      bottom: 50px;
+    };
+    border-radius: 10px;
+    align-content: center;
+    h1 {
+      font-size: 45px;
+      font-family: relaway-grid, sans-serif;
+      font-weight: 300;
+      margin:{
+        bottom: 20px;
+      };
+      z-index: 2;
+      color: #ffffff;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    .logo {
+      width: 60%;
+      margin: 0 auto;
+      z-index: 2;
+    }
+    &-section {
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: $shadow;
+        z-index: 1;
+        opacity: .3;
+        border-radius: 10px;
+        transition: background-color 1s ease;
+      }
+    }
+    &:hover {
+      .header-content-left-section:before{
+        background-color: darken($shadow, 30%);
+      }
+    }
+  }
+  
+  &-right {
+    form{
+      grid-template-rows: 1fr;
+      grid-gap: 20px;
+      input, textarea {
+        margin:auto;
+        border: none;
+        padding: 15px 20px;
+        width: 50%;
+        font-family:Arial, sans-serif;
+        font-style: italic;
+        outline:none;
+        transition: background-color .25s ease;
+        border-radius: 10px;
+        &:focus {
+          background: $light;
+          border: 2px solid;
+          border-color: $accent;
+        }
+        [placeholder] {
+          color: lighten($dark, 20%);
+        }
+      }
+    }
+
+  }
+}
+.accent {
+  color:$accent
+}
+.button {
+  display: inline-block;
+  width: 25%;
+  min-height: 35px;
+  font-size: 18px;
+  color:#fff;
+  outline:none;
+  background-color:$shadow ;
+  align-content: center;
+  margin:auto;
+  border:none;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  font-family: sans-serif;
+  transition: background-color .5s ease;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  &:hover {
+    background-color: darken($shadow, 30%);
+  }
+  &:active {
+    box-shadow: inset 1px 1px 5px 2px darken(#135cbc,19%);
+  }
+}
+
+.social {
+  height: 10vh;
+
+}
+.social-icons{
+  grid-template-columns: repeat(5, 1fr);
+  a  {
+    width: 100%;
+    text-align: center;
+    @include fluidFontSize(20px, 50px, 480px, 1280px, 40px);
+    align-content: center;
+    margin: auto;
+    > i{ color:darken($light, 30%);
+      @include fluidFontSize(20px, 50px, 480px, 1280px, 40px);
+      align-content: center;
+      margin: auto;
+      justify-content: center;}
+  }
+
+
+   :nth-child(1){
+     &:hover {
+
+       i {
+         color:#fff;
+         background-color: #4267b2;
+         border-radius: 8px;
+         padding:2px 5px;
+       }
+     }
+
+   }
+  :nth-child(2){
+    &:hover {
+      i {
+        padding: 0px 4px;
+        background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+        color:#fff;
+        border-radius: 8px;
+      }
+    }
+  }
+  :nth-child(3){
+    &:hover {
+      i {
+        color:#000;
+      }
+    }
+  }
+  :nth-child(4){
+    &:hover {
+
+
+
+      i {
+        color:#fff;
+        border-radius: 20%;
+        background-color: #0077B5;
+        padding:0 5px;
+      }
+    }
+  }
+  :nth-child(5){
+    &:hover {
+      i {
+        background-color: #dd4b39;
+        color:#fff;
+        border-radius: 8px;
+        padding: 0 5px;
+      }
+    }
+  }
+
+
+}
+
+
+// end code here //
+@import "media";
