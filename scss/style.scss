@@ -13,7 +13,7 @@
   background: #fff;
   height: 10vh;
   top: 0;
-  z-index: 2;
+  z-index: 200;
   font-size: 21px;
   font-weight:300;
 }
@@ -167,11 +167,13 @@
 
 .social {
   height: 10vh;
+  border-color: $light;
 
 }
 .social-icons{
   grid-template-columns: repeat(5, 1fr);
   a  {
+    outline: none;
     width: 100%;
     padding:2px;
     text-align: center;
@@ -179,8 +181,11 @@
     align-content: center;
     margin: auto;
     border: {
+      bottom: 1px solid;
+      left:1px solid;
       right: 1px solid;
-    }
+    };
+    border-radius: 0 0 5px 5px;
     border-color: $light;
 
     > i{ color:darken($light, 30%);
@@ -189,11 +194,19 @@
       margin: auto;
       justify-content: center;}
     &:hover {
-      border-color  : darken($light, 100%);
+      border:none;
+      box-shadow: 2px 1px 20px 2px $dark;
+      transition: .5s ease;
     }
+    &:active {
+      box-shadow: inset 2px 1px 10px 2px $dark;
+      transition: .1s ease;
+    }
+
   }
+  // Start for Facebook Template
    :nth-child(1){
-     &:hover {
+     &:hover, &:focus {
 
        i {
          color:#fff;
@@ -204,8 +217,9 @@
        }
      }
    }
+  // Start for Instagram template;
   :nth-child(2){
-    &:hover {
+    &:hover, &:focus {
       i {
         padding: 0 4px;
         background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
@@ -215,16 +229,18 @@
       }
     }
   }
+  //Start for GitHub Template
   :nth-child(3){
-    &:hover {
+    &:hover, &:focus {
       i {
         color:#000;
         transition: .5s ease;
       }
     }
   }
+  //Start for Linkedin Template
   :nth-child(4){
-    &:hover {
+    &:hover, &:focus {
 
       i {
         color:#fff;
@@ -235,8 +251,9 @@
       }
     }
   }
+  //Start for Google+ Template
   :nth-child(5){
-    &:hover {
+    &:hover, &:focus {
       i {
         background-color: #dd4b39;
         color:#fff;
@@ -246,10 +263,17 @@
       }
     }
   }
+}
+
+// Gallery section
+.gallery {
+  margin:{
+    top:5.5px;
+  };
+ grid-template-columns: repeat(4, 1fr);
 
 
 }
-
 
 // end code here //
 @import "media";
