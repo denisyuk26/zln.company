@@ -15,10 +15,10 @@
             <div class="menu fixed enable grid">
                 <div class="menu-desktop grid">
                     <a href="#" class="menu-desktop-text">Home</a>
-                    <a href="#" class="menu-desktop-text">Gallery</a>
-                    <a href="#about" class="menu-desktop-text">About Us</a>
+                    <a href="#gallery" class="menu-desktop-text">Gallery</a>
+                    <a href="#about" class="menu-desktop-text" onclick="tabs('tab-one')">About Us</a>
                     <a href="#" class="menu-desktop-text">Feedback</a>
-                    <a href="#" class="menu-desktop-text">Contacts</a>
+                    <a href="#tab-three" class="menu-desktop-text" onclick="tabs('tab-three')">Contacts</a>
                 </div>
 
 
@@ -67,9 +67,9 @@
         </div>
     </section>
     <section>
-        <div class="container">
+        <div class="container" id="gallery">
             <h2>Our works</h2>
-            <div class="gallery grid">
+            <div  class="gallery grid">
 
                 <div class="gallery-content">
                     <div class="content-text">
@@ -124,7 +124,7 @@
             <a href="#" class="works button">All works</a>
         </div>
     </section>
-    <section id="about" style="background-image: url(../img/)">
+    <section id="about" >">
         <div class="about">
             <h2>Our Company</h2>
             <div class="about-tabs grid">
